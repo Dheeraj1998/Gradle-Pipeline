@@ -4,12 +4,14 @@ pipeline {
 			stage ("Clean"){
 				steps {
 					echo 'Cleaning step.'
+					sh './gradlew clean --no-daemon'
 				}
 			}
 
 			stage ("Build"){
 				steps {
 					echo 'Building step.'
+					sh './gradlew build --no-daemon'
 				}
 			}
 
