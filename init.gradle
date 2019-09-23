@@ -1,0 +1,3 @@
+initscript {
+    println "Hello from the initscript file!"
+}
